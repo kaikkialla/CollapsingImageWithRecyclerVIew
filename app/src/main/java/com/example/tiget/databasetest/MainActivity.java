@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Database mDatabase;
     List<StringConstructor> strings;
     EditText editText;
-
+    public static int ITEMS_QUANTITY = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +44,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         mDatabase.load();
-        strings.add(new StringConstructor("Text", strings.size()+1));
+        for(int i = 0; i <= ITEMS_QUANTITY; i++) {
+            strings.add(new StringConstructor("text" + i, i));
+        }
         adapter.swap(strings);
-        strings.add(new StringConstructor("Text1", strings.size()+1));
-        adapter.swap(strings);
+
     }
 
     @Override

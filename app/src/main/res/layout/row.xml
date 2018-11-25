@@ -8,6 +8,9 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorBg"/>
+        android:background="@color/colorBg"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:textSize="32dp"/>
 
 </RelativeLayout>

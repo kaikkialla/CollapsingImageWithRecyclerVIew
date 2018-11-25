@@ -11,7 +11,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="192dp"
+        android:layout_height="400dp"
         android:background="@color/colorAccent"
         android:fitsSystemWindows="true"
         android:scaleType="centerCrop"
@@ -24,6 +24,7 @@
         android:fitsSystemWindows="true"
         android:background="@color/colorTransparent"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"
             android:layout_width="match_parent"
@@ -31,7 +32,6 @@
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
-
 
             <!--  Collapsing image. Right now - transparent -->
 
@@ -47,6 +47,9 @@
     </android.support.design.widget.AppBarLayout>
 
 
+
+
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
@@ -55,6 +58,25 @@
         tools:context=".MainActivity"
         tools:showIn="@layout/activity_main"
         android:background="#FFFFFF">
+
+
     </android.support.v7.widget.RecyclerView>
+
+
+    <ImageView
+        android:id="@+id/staticImage"
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:background="#00FF00"
+        android:layout_gravity="center_horizontal|top"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginTop="16dp"/>
+
+    <!-- margin top - расстояние от верха recycler view-->
+
+
+
+
+
 
 </android.support.design.widget.CoordinatorLayout>
